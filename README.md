@@ -8,6 +8,7 @@
 </p>
 
 <p>1. create database codingcollective</p>
+<p>2. composer install</p>
 <p>2. php artisan migrate</p>
 <p>3. php artisan migrate:refresh --seed</p>
 <p>4. php artisan optimize</p>
