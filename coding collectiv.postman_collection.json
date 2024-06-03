@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "143d5eaf-4c2f-4040-8b1d-bf3421af28dd",
+		"name": "coding collectiv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23660381"
+	},
+	"item": [
+		{
+			"name": "getToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Dani Lukman hakim",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getToken",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertDeposit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|F564y0c1WGJia6PFN0FpyDEGWKPgBsNRTrP0B1Tbdeeb62b8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 9|eBAjjWMhPCL1Y43epAeS8iFl3AvH76LsNNUSPVBy552de622",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "XSRF-TOKEN=eyJpdiI6InV0b0lTeW1NVmwyZzkwaXN2ai9zeVE9PSIsInZhbHVlIjoiOU9ZYk90Y1hOUTBMYURzOU9GQ1kwcWJJamJpM04zeVU2OHpjUnJzNGRHVjNIV085c25oc2t5aDdJVDhIbHVJbzNCWlZBQ1pjdWltS3NreEI4NnZoMnRzR05Xa1UyeElKd2xaVjN4QlJBYTkrRnFFenVnZEpEcklCWmRNejRwL3kiLCJtYWMiOiJhNGVjNTg3YmMxZjljM2MxM2JiOWU2Yzk1NGZhOTRkYThhYzBhNjc0ZThmOGI3NDZhYzM4MzAxNjllYjA5MWI3IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IkVzY0hYb1dJQnBMb2dNTGlRVlFVdHc9PSIsInZhbHVlIjoiNEtsMUNsdDV0YWVCdzN6YThGdVJ6OVRzVGpjVEJYWmxpQ251SHcxWWNFdnVmdmQ1dTQvVVM4bkZVUzBQNjAyN2xxT0hKNXJGQWRSOHhmWThCZ3pDME9VeCtieUNEWEJEVHVENmNLdFBYKzJERFI4bTQvY20yKzRreEg0bmlBWW8iLCJtYWMiOiIwZDY5YjU0MDcwYzRmYTI3MjY0MDlmODYyOGViOGY3N2ViMDU5YzE0YzI5OTE5MmI1MzZiZWNlYWQwOWY3YjU4IiwidGFnIjoiIn0%3D",
+						"name": "cookie",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data; boundary=<calculated when request is sent>",
+						"name": "content-type",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "order_id",
+						"value": "34234234",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "amount",
+						"value": "400000",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "timestamp",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount",
+							"value": "100000",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/inputDeposit",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"inputDeposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deposit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/deposit",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "integrateWithThirdParty",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saldo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "withdrawal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
