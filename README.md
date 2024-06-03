@@ -9,10 +9,10 @@
 
 <p>1. create database codingcollective</p>
 <p>2. composer install</p>
-<p>2. php artisan migrate</p>
-<p>3. php artisan migrate:refresh --seed</p>
-<p>4. php artisan optimize</p>
-<p>5. php artisan serve</p>
+<p>3. php artisan migrate</p>
+<p>4. php artisan migrate:refresh --seed</p>
+<p>5. php artisan optimize</p>
+<p>6. php artisan serve</p>
 
 <h1>File Api</h1>
 Name file : coding collectiv.postman_collection.json
